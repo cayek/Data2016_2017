@@ -10,9 +10,9 @@ git annex init
 
 ### How to
 
-- add krakenator rsync remote
+- add krakenator remote
 ```sh
-git annex initremote krakenator_rsync type=rsync rsyncurl=krakenator.imag.fr:/home/cayek/GitAnnex/Data2016_2017 encryption=none
+git remote add krakenator krakenator.imag.fr:/home/cayek/GitRepo/Data2016_2017.git
 ```
 
 - add data
@@ -28,7 +28,7 @@ git annex copy --to krakenator_rsync
 - get data from krakenator_rsync
 ```
 git annex sync krakenator_rsync
-git annex get file_name 
+git annex get file_name
 ```
 Data are stored on Krakenator server.
 
