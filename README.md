@@ -4,6 +4,10 @@ There are data I used during my last year of PhD.
 
 ## git-annex
 
+```
+git annex init
+```
+
 ### How to
 
 - add krakenator rsync remote
