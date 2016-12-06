@@ -4,9 +4,12 @@ There are data I used during my last year of PhD.
 
 ## git-annex
 
+In new git repo (git bare repo too)
 ```
 git annex init
 ```
+Data are stored on Krakenator server.
+
 
 ### How to
 
@@ -20,17 +23,16 @@ git remote add krakenator krakenator.imag.fr:/home/cayek/GitRepo/Data2016_2017.g
 git annex add file_name
 ```
 
-- copy data to krakenator_rsync
+- copy data to krakenator
 ```
-git annex copy --to krakenator_rsync
+git annex copy --to krakenator
 ```
 
 - get data from krakenator_rsync
 ```
-git annex sync krakenator_rsync
+git annex sync krakenator
 git annex get file_name
 ```
-Data are stored on Krakenator server.
 
 
 
