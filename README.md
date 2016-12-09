@@ -8,14 +8,14 @@ In new git repo (git bare repo too)
 ```
 git annex init
 ```
-Data are stored on Krakenator server.
+Data are on TIMC-BCM-15 and krakenator.
 
 
 ### How to
 
 - add krakenator remote
 ```sh
-git remote add krakenator krakenator.imag.fr:/home/cayek/GitRepo/Data2016_2017.git
+git remote add krakenator krakenator.imag.fr:/home/cayek/Project/Data2016_2017
 ```
 
 - add data
