@@ -1,0 +1,61 @@
+* Data2016_2017
+  There are data I used during my last year of PhD.
+** git-annex
+
+In new git repo (git bare repo too)
+
+#+BEGIN_SRC bash
+git annex init
+#+END_SRC
+
+
+
+Data are on TIMC-BCM-15 and krakenator.
+
+
+*** How to
+
+- add krakenator remote
+#+BEGIN_SRC bash
+git remote add krakenator krakenator.imag.fr:/home/cayek/Project/Data2016_2017
+#+END_SRC
+
+- add data
+#+BEGIN_SRC bash
+git annex add file_name
+#+END_SRC
+
+- copy data to krakenator
+#+BEGIN_SRC bash
+git annex copy --to krakenator
+#+END_SRC
+
+- get data from krakenator_rsync
+#+BEGIN_SRC bash
+git annex sync krakenator
+git annex get file_name
+#+END_SRC
+
+For more details see: https://git-annex.branchable.com/walkthrough/
+
+* Dataset
+  Some informations about dataset in this repo
+** SSMPG2015/ 
+   Dataset simulated by Katie Lotterhos for the school SSMPG2015
+** MathieuGautier/
+   Dataset used in *Genome scan methods against more complex models: when and how much should we trust them?* of piere de villemereuil et al.
+*** TODO 
+    Convert .csv into .RData !!!
+*** mec12705-sup-0002-Pythonscripts/
+    Python script that generated dataset 
+*** Monogenic
+    I find this in an older .Rmd in my first LFMM project of 2016
+#+BEGIN_SRC R
+outlier = c(546) # for monogenic
+#+END_SRC
+
+*** Polygenic
+    I find this in an older .Rmd in my first LFMM project of 2016
+#+BEGIN_SRC R 
+outlier = c(2793,1850,583,4083,3349,860,4785,706,947,939,1819,925,403,2867,2897,97,3102,2618,708,1190,2471,1533,3924,2395,2690,2926,1511,668,4826,4755,638,4148,1777,1869,2252,4326,397,3416,3171,2451,1233,2055,3013,3202,1055,3484,2984,2145,4547,4831) + 1
+#+END_SRC

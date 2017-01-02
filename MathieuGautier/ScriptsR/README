@@ -1,0 +1,13 @@
+Some scripts to convert the .csv files into different formats:
+- scriptBayenv.R : to convert the CSV into a BayEnv format
+- scriptBayenv_env.R : to extract and standardise environment information from the CSV files, as well as simulate a new "fake" environment
+- scriptBayescan.R : to convert the CSV into a Bayescan format (this script is less user-friendly than the above, but it is well documented nonetheless)
+- BFtoqval.R : Script to convert Bayes Factors into q-values (poorly documented, but short and hopefully straightforward)
+- functions.R : some usefull functions to compute power, FDR, and so on (probably useless, but here anyway)
+
+BONUS: description of the CSV file
+- first column: pop ID
+- second column: environmental value
+- all the rest: genotypes.
+Because individuals are diploid, each locus is represented by two consecutive columns 
+(one for each copy, i.e. loc1.1, loc1.2, loc2.1, loc 2.2, loc3.1, loc3.2...) 
