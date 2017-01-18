@@ -8,10 +8,7 @@ In new git repo (git bare repo too)
 git annex init
 #+END_SRC
 
-
-
 Data are on TIMC-BCM-15 and krakenator.
-
 
 *** How to
 
@@ -40,13 +37,13 @@ For more details see: https://git-annex.branchable.com/walkthrough/
 
 * Dataset
   Some informations about dataset in this repo
-** SSMPG2015/ 
+** ./SSMPG2015/ 
    Dataset simulated by Katie Lotterhos for the school SSMPG2015
-** MathieuGautier/
+** ./MathieuGautier/
    Dataset used in *Genome scan methods against more complex models: when and how much should we trust them?* of piere de villemereuil et al.
-*** TODO 
-    Convert .csv into .RData !!!
-*** mec12705-sup-0002-Pythonscripts/
+*** TODO Convert 
+    .csv into .RData
+*** =mec12705-sup-0002-Pythonscripts/=
     Python script that generated dataset 
 *** Monogenic
     I find this in an older .Rmd in my first LFMM project of 2016
@@ -59,3 +56,8 @@ outlier = c(546) # for monogenic
 #+BEGIN_SRC R 
 outlier = c(2793,1850,583,4083,3349,860,4785,706,947,939,1819,925,403,2867,2897,97,3102,2618,708,1190,2471,1533,3924,2395,2690,2926,1511,668,4826,4755,638,4148,1777,1869,2252,4326,397,3416,3171,2451,1233,2055,3013,3202,1055,3484,2984,2145,4547,4831) + 1
 #+END_SRC
+** ./AthalianaGegMapLines/
+  - Data download from: http://bergelson.uchicago.edu/?page_id=790
+  - [[http://bergelson.uchicago.edu/wp-content/uploads/2015/04/call_method_75.tar.gz][downlaod the data]]
+  There are data I used in TESS3 second article
+  
