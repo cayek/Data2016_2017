@@ -58,6 +58,15 @@ outlier = c(2793,1850,583,4083,3349,860,4785,706,947,939,1819,925,403,2867,2897,
 #+END_SRC
 ** ./AthalianaGegMapLines/
   - Data download from: http://bergelson.uchicago.edu/?page_id=790
-  - [[http://bergelson.uchicago.edu/wp-content/uploads/2015/04/call_method_75.tar.gz][downlaod the data]]
+  - [[http://bergelson.uchicago.edu/wp-content/uploads/2015/04/call_method_75.tar.gz][download the data]]
   There are data I used in TESS3 second article
   
+** ./1000Genomes/
+*** ./1000Genomes/Phase3Chrm22/
+    Phase 3 version of the 1000 genome, only the chromosom 22. I ddl the vcf
+    file [[ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/][here]]
+    ddl file: 
+#+BEGIN_SRC bash
+curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
+curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel
+#+END_SRC
