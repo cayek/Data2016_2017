@@ -1,3 +1,5 @@
+bibliography:biblio.bib
+
 * Data2016_2017
   There are data I used during my last year of PhD.
 ** git-annex
@@ -70,3 +72,13 @@ outlier = c(2793,1850,583,4083,3349,860,4785,706,947,939,1819,925,403,2867,2897,
 curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
 curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel
 #+END_SRC
+** ./GSE42861/
+   Données trouvé ici:
+   https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42861
+   Utilisé dans ce papier cite:Rahmani_2016.
+*** file:./GSE42861/script_methylome.R
+    C'est le fichier qu'olivier a utilisé pour pour ddl les données. Ca marche
+    pas chez moi...
+*** ./GSE42861/exp861.RData
+    C'est les variables defs dans file:./GSE42861/script_methylome.R. Output par
+    olivier.
