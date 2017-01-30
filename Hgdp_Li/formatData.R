@@ -32,11 +32,8 @@ X_prec <- matrix(indiv.meta$X_prec, n,1)
 rownames(X_prec) <- rownames(G)
 
 # save a sample
-sample.indiv <- sample.int(n, size = 200)
 sample.locus <- sample.int(L, size = 50000)
-saveRDS(X_tmp[sample.indiv,], "X_tmp.rds")
-saveRDS(X_prec[sample.indiv,], "X_prec.rds")
-saveRDS(G[sample.indiv,sample.locus], "Hgdp_Li.rds")
+saveRDS(G[,sample.locus], "Hgdp_Li.sample.rds")
 
 # save
 saveRDS(X_tmp, "X_tmp.rds")
