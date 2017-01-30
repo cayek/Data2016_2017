@@ -82,6 +82,11 @@ curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_cal
 *** ./GSE42861/exp861.RData
     C'est les variables defs dans file:./GSE42861/script_methylome.R. Output par
     olivier.
+*** TODO ./GSE42861/DataPreprocessing.R
+    Goal: repruduce data processing of paper cite:Zou_2014 
 ** ./refractorDemo/
    data found here: https://github.com/cozygene/refactor. There are data used in
    the demo of refractor method.
+** ./Hgdp_Li/
+   Hgdp data used in cite:frichot13_testin_assoc_between_loci_envir anylisis. I
+   I found this dataset on patator.imag.fr.
