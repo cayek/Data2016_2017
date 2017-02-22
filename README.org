@@ -4,38 +4,37 @@ bibliography:biblio.bib
   There are data I used during my last year of PhD.
 ** git-annex
 
-In new git repo (git bare repo too)
+   In new git repo (git bare repo too)
 
-#+BEGIN_SRC bash
-git annex init
-#+END_SRC
+   #+BEGIN_SRC bash
+   git annex init
+   #+END_SRC
 
-Data are on TIMC-BCM-15 and krakenator.
+   Data are on TIMC-BCM-15 and krakenator.
 
-*** How to
-
-- add krakenator remote
+*** How to...
+    For more details see: https://git-annex.branchable.com/walkthrough/
+**** add krakenator remote
 #+BEGIN_SRC bash
 git remote add krakenator krakenator.imag.fr:/home/cayek/Project/Data2016_2017
 #+END_SRC
 
-- add data
-#+BEGIN_SRC bash
-git annex add file_name
-#+END_SRC
+**** add data
+ #+BEGIN_SRC bash
+ git annex add file_name
+ #+END_SRC
 
-- copy data to krakenator
-#+BEGIN_SRC bash
-git annex copy --to krakenator
-#+END_SRC
+**** copy data to krakenator
+ #+BEGIN_SRC bash
+ git annex copy --to krakenator
+ #+END_SRC
 
-- get data from krakenator_rsync
-#+BEGIN_SRC bash
-git annex sync krakenator
-git annex get file_name
-#+END_SRC
+**** get data from krakenator_rsync
+ #+BEGIN_SRC bash
+ git annex sync krakenator
+ git annex get file_name
+ #+END_SRC
 
-For more details see: https://git-annex.branchable.com/walkthrough/
 
 * Dataset
   Some informations about dataset in this repo
@@ -82,8 +81,11 @@ curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_cal
 *** ./GSE42861/exp861.RData
     C'est les variables defs dans file:./GSE42861/script_methylome.R. Output par
     olivier.
-*** TODO ./GSE42861/DataPreprocessing.R
+*** DONE ./GSE42861/DataPreprocessing.R
+    CLOSED: [2017-02-22 mer. 10:54]
     Goal: repruduce data processing of paper cite:Zou_2014 
+    
+    En faite je vais pas me prendre la tête :D
 ** ./refractorDemo/
    data found here: https://github.com/cozygene/refactor. There are data used in
    the demo of refractor method.
